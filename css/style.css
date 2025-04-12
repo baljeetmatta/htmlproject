@@ -1,0 +1,95 @@
+.navigation
+{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;;
+
+}
+.navigation div{
+    color:white
+}
+.navigation a{
+    text-decoration: none;
+    color:white;
+    padding-right:8px;
+    text-transform: uppercase;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: "Poppins";
+    font-size: small;
+}
+header{
+    background-image: url("../images/banner.jpg");
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    
+}
+.headingText
+{
+    padding-left:180px;
+    padding-top: 50px;
+    padding-bottom: 180px;;
+}
+.upperText,.upperTextBlack {
+    text-transform: uppercase;
+    font-size:35px;
+    color:white;
+    font-weight: 500;
+}
+.upperTextBlack{
+    color:black;
+    font-size: 12px;
+}
+.smallText{
+    color:lightslategray;
+    font-size: 12px;
+}
+.secondaryLine{
+    font-size: 15px;;
+    color:white;
+   
+}
+.GridClass{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap:20px;
+}
+.GridClass div{
+    text-align: center;
+   
+}
+.features{
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top:80px ;
+}
+.divider{
+    border: 1px solid lightgrey;
+    height:100%
+}
+.hrcode{
+     width:40%;
+     margin:0;
+     padding:0;
+     margin-top:40px
+}
+.imageGallery
+{
+    display:flex;
+    column-gap: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 80px;;
+
+}
+.bluearea{
+    height:300px;
+    background-color: darkblue;
+    margin:-80px;
+}
