@@ -1,0 +1,60 @@
+<html>
+<body>
+<script>
+//PROGRAM 1
+/* a=parseInt(prompt("Enter no 1"));
+ b=parseInt(prompt("Enter no 2"));
+ c=parseInt(prompt("Enter no 3"));
+ d=parseInt(prompt("Enter no 4"));
+ e=parseInt(prompt("Enter no 5"));
+let array=[];
+array.push(a);
+array.push(b,c,d,e);
+console.log(array);
+*/
+
+let array=[];
+for(i=1;i<=5;i++)
+{
+	//a=parseInt(prompt("Enter No "+i));
+	a=getNumber();
+	add(a);
+}
+function add(x)
+{
+	//if(x%2==0)
+	array.push(x);
+
+}
+function del(x)
+{
+//pop,shift,splice->position
+let position=array.indexOf(x);
+array.splice(position,1);
+
+
+
+}
+
+console.log(array);
+del(getNumber());
+console.log(array);
+function getNumber()
+{
+	let x=parseInt(prompt("Enter No"));
+	return x;
+
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
