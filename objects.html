@@ -7,7 +7,7 @@
 //obj.name="TEst";
 //obj.age=23
 //console.log(obj);
-
+/*
 let obj={
 "name":"test",  
 marks:[12,23,3],
@@ -43,8 +43,47 @@ console.log(obj.marks[i]);
 let x="name";
 console.log(obj[x]);
 
+*/
 
+let arrayObjects=[
+	{ "title":"ABC Book",
+		"author":"ABC Author",
+		status:true
+	},
+	{ "Title":"XYZ Book",
+		"author":"XYZ Author",
+		status:true
+	},
+	{ "title":"AAA Book",
+		"author":"AAA Author",
+		status:false
+	}
 
+]
+/*
+for(i=0;i<arrayObjects.length;i++)
+{
+	if(arrayObjects[i].status==true)
+		console.log(arrayObjects[i].title);
+		
+
+}
+*/
+let title=prompt("Enter Title:");
+let author=prompt("Enter Author:");
+
+let status=prompt("Enter Status:");
+if(status=="true")
+status=true;
+else
+status=false;
+
+//let obj={title:title,author:author,status:status};
+let obj={title,author,status}
+console.log(obj);
+
+arrayObjects.push(obj);
+console.log(arrayObjects);
 
 
 </script>
