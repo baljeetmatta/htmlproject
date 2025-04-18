@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<img src="images/bg5.jpg" width="300" height="300" id="bigBox"/>
+<p>
+<img src="images/bg5.jpg" width="100" height="100" onMouseOver="changeImage(this)"/>
+<img src="images/default.png" width="100" height="100" onMouseOver="changeImage(this)"/>
+<img src="images/mike.jpg" width="100" height="100" onMouseOver="changeImage(this)"/>
+
+</p>
+
+<script>
+	let bigbox=document.querySelector("#bigBox");
+	function changeImage(image)
+	{
+		bigbox.src=image.src;
+
+	}
+</script>
+
+</body>
+</html>

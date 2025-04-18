@@ -1,18 +1,24 @@
 <html>
 <body>
+<img src="images/default.png" width="200" height="200" onMouseOver="changeImage(this)" onMouseOut="changeDefault(this)"/>
+<!--
 
-
+<p onclick="ch(this)"  id="mpara">First Para</p>
+<p onclick="ch(this)">New Para</p>
+<p onclick="ch(this)">New Para</p>
+<p onclick="ch(this)">New Para</p>
+-->
 <p>First Para</p>
 <p>New Para</p>
 <p>New Para</p>
 <p>New Para</p>
-
 <div>Div content</div>
+<input type="button" onclick="clickMe()" value="Click me">
 
 <p id="mypara">Second Para</p>
 <p>Another</p>
 <a href="#">Test Link</a>
-
+Event handling
 
 <input type="text" id="textbox" value="Code"/>
 <script>
@@ -29,13 +35,48 @@ x.innerHTML="<b>Hello</b>";
 //console.log(x);
 let box=document.getElementById("textbox");
 alert(box.value);
-*/
+
 
 
 let x=document.querySelectorAll("p");
 alert(x[0].innerText);
 x[1].innerHTML="<b>Code</b>";
 alert(x[1].innerHTML);
+*/
+//let p=document.querySelector("#mypara");
+//p.style.color="red";
+let p=document.querySelectorAll("p");
+for(i=0;i<p.length;i++)
+p[i].style.color="red";
+
+function ch(a)
+{
+
+//let mpara=document.querySelector("#mpara");
+//mpara.style.color="black";
+a.style.color="black";
+
+	//alert("Clicked");
+
+}
+
+function clickMe()
+{
+	alert("Clicked on button");
+
+
+}
+function changeImage(imageTag)
+{
+	imageTag.src="images/mike.jpg";
+
+
+
+}
+function changeDefault(imageTag)
+{
+	imageTag.src="images/default.png";
+}
 
 
 
