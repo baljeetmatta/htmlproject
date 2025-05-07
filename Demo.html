@@ -1,0 +1,82 @@
+<html>
+<style>
+.container{
+padding-left:120px;
+}
+.red
+{
+background-color:red;
+}
+
+.green
+{
+background-color:green;
+}
+
+.blue
+{
+background-color:blue;
+}
+.grid{
+	display:grid;
+	grid-template-columns:auto auto auto;
+}
+
+@media only screen and (max-width:600px)
+{
+
+	.container{
+		padding-left:20px;
+	}
+	.desktop
+	{
+		display:none;
+	}	
+}
+@media only screen and (max-width:768px)
+{
+	.grid{
+		display:grid;
+		grid-template-columns:auto auto;
+	}
+
+}
+@media print
+{
+
+.container
+{
+color:red;
+
+}
+
+}
+</style>
+<body>
+<img src="img.jpg" width="100%"/>
+
+<div class="container">
+Demo Content
+</div>
+<div class="desktop">
+Desktop content
+</div>
+
+<div class="grid">
+	<div class="blue">
+First Content
+	</div>
+	<div class="red">
+Second Content
+	</div>
+	<div class="green">
+Third Content
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
